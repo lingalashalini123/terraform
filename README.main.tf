@@ -7,7 +7,7 @@ secret_key = "VFqGZngQZI+/lNZi5EWu8tFqIRc5Hs/1znINbXcA"
 resource "aws_instance" "one" {
   ami             = "ami-09538990a0c4fe9be"
   instance_type   = "t2.micro"
-  key_name        = "Shkeypair"
+  key_name        = "ShKeypair"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1a"
   user_data       = <<EOF
@@ -26,7 +26,7 @@ EOF
 resource "aws_instance" "two" {
   ami             = "ami-09538990a0c4fe9be"
   instance_type   = "t2.micro"
-  key_name        = "Shkeypair"
+  key_name        = "ShKeypair"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1b"
   user_data       = <<EOF
@@ -45,7 +45,7 @@ EOF
 resource "aws_instance" "three" {
   ami             = "ami-09538990a0c4fe9be"
   instance_type   = "t2.micro"
-  key_name        = "Shkeypair"
+  key_name        = "ShKeypair"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1a"
   tags = {
@@ -56,7 +56,7 @@ resource "aws_instance" "three" {
 resource "aws_instance" "four" {
   ami             = "ami-09538990a0c4fe9be"
   instance_type   = "t2.micro"
-  key_name        = "Shkeypair"
+  key_name        = "ShKeypair"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1b"
   tags = {
