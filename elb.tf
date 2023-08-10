@@ -29,7 +29,7 @@ resource "aws_elb" "bar" {
   cluster_identifier      = "aurora-cluster-demo"
   engine                  = "aurora-mysql"
   engine_version          = "5.7.mysql_aurora.2.11.2"
-  availability_zones      = ["eu-west-3a", "eu-west-3b"]
+  availability_zones      = ["us-east-1a", "us-east-1b"]
   database_name           = "mydb"
   master_username         = "raham"
   master_password         = "Rahamshaik#444555"
